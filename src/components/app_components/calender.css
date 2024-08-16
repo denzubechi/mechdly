@@ -1,0 +1,29 @@
+/* calender.css */
+.rbc-calendar {
+  border: none;
+  color: #2c2c2e;
+}
+
+.rbc-event {
+  color: #000;
+  border-color: #2c2c2e;
+}
+
+.rbc-toolbar {
+  display: none;
+}
+
+.rbc-header {
+  background-color: #2c2c2e;
+  color: white;
+
+  
+}
+
+.rbc-today {
+  background-color: #2c2c2e;
+}
+
+.rbc-time-slot {
+  border-color: #2c2c2e;
+}
