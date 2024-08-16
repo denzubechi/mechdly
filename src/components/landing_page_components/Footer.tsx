@@ -116,33 +116,33 @@ const Footer = () => {
                       </div>
                   </form>
               </div>
-              <div className="flex-1 mt-10 space-y-6 items-center justify-between sm:flex md:space-y-0 md:mt-0">
-                  {
-                      footerNavs.map((item, idx) => (
-                          <ul
-                              className="space-y-4"
-                              key={idx}
-                          >
-                              <h4 className="text-white text-xl font-medium">
-                                  { item.label }
-                              </h4>
-                              {
-                                  item.items.map(((el, idx) => (
-                                      <li key={idx}>
-                                          <a 
-                                              href={el.href}
-                                              className="hover:underline text-gray-300 hover:text-[F68537]"
-                                          
-                                          >
-                                              { el.name }
-                                          </a>
-                                      </li>
-                                  )))
-                              }
-                          </ul>
-                      ))
-                  }
-              </div>
+             <div className="flex flex-col-reverse md:flex-row md:justify-end">
+          <div className="flex-1 md:flex md:justify-end space-y-6 md:space-x-12 md:space-y-0">
+            {
+                footerNavs.map((item, idx) => (
+                  <div className="flex-1" key={idx}>
+                    <h4 className="text-white text-xl font-medium">
+                      {item.label}
+                    </h4>
+                    <ul className="mt-4 space-y-2">
+                      {
+                        item.items.map((el, idx) => (
+                          <li key={idx}>
+                            <a 
+                              href={el.href}
+                              className="hover:underline text-gray-300 hover:text-[#F68537]"
+                            >
+                              {el.name}
+                            </a>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
           </div>
           <div className="mt-8 py-6  items-center justify-between sm:flex">
           <div className="mt-6 sm:mt-0">

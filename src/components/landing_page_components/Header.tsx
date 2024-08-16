@@ -80,9 +80,7 @@ export default () => {
                     </div>
                 </section>
             </div>
-
-            {/* Fill effect at the extreme right end */}
-            <div className="absolute right-[-100px] top-[30px] h-80  lg:h-96 lg:w-46 bg-[#F68537] rounded-full blur-[100px] z-0"></div>
+            <span className="blur-header"></span>
         </div>
     );
 };

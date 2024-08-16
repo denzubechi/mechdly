@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="relative hidden lg:flex lg:col-span-5 items-end">
           <img src={HeroImg} alt="mockup" className="w-full h-auto" />
-          <span className="blur-header"></span>
+          
         </div>
       </div>
     
