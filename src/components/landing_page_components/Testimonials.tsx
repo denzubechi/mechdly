@@ -19,9 +19,9 @@ const Testimonials = () => {
           <div className="relative">
             {/* Fill effect on the left and right ends */}
             <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 z-10">
-              <div className="absolute left-[-10rem] top-1/2 transform -translate-y-1/2 bg-[#FFD282] rounded-full filter blur-[120px] h-[20rem] w-[20rem]  sm:block"></div> 
+              <div className="absolute left-[-10rem] top-1/2 transform -translate-y-1/2 bg-[#FFD282] rounded-full filter blur-[150px] h-[20rem] w-[20rem]  sm:block"></div> 
               {/* Hidden on small screens, shown on larger screens */}
-              <div className="absolute right-[-0rem] top-1/2 transform -translate-y-1/2 bg-[#FFD282] rounded-full filter blur-[120px] h-[20rem] w-[10rem] hidden lg:block"></div>
+              <div className="absolute right-[-0rem] top-1/2 transform -translate-y-1/2 bg-[#FFD282] rounded-full filter blur-[150px] h-[20rem] w-[10rem] hidden lg:block"></div>
               {/* Hidden on medium screens, shown on large screens */}
             </div>
             <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">

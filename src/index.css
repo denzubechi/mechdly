@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "San Serif";
+  font-family: "Satoshi";
   src: url('./assets/fonts/Satoshi-Medium.ttf') format('truetype'); 
 }
 .blur-header {
@@ -33,7 +33,7 @@ body::-webkit-scrollbar{
 }
 body {
   margin: 0;
-  font-family: San Serif;     
+  font-family: Satoshi;     
 }
 
 
