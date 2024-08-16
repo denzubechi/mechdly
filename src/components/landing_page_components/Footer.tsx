@@ -99,7 +99,7 @@ const Footer = () => {
                   </div>
                   <form 
                       onSubmit={(e) => e.preventDefault()}
-                      className='mt-6'
+                      className='mt-6 mb-2'
                   >
                     
                       <div className="max-w-sm flex  items-center border border-[#F69E61] rounded-full p-0">

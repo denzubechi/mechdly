@@ -74,13 +74,15 @@ export default () => {
                     </nav>
                 </header>
                 
-                <section>
-                    <div className="max-w-screen-xl mx-auto overflow-hidden md:flex">
+                <section className="relative">
+                <div className="absolute h-[20rem] w-[20rem] bg-[#FFD282] rounded-full filter blur-[100px] md:blur-[120px] top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 md:translate-x-0"></div>
+                    <div className="max-w-screen-xl mx-auto overflow-hidden md:flex relative">
                         <Hero />
+                        {/* Fill effect */}
+                       
                     </div>
                 </section>
             </div>
-            <span className="blur-header"></span>
         </div>
     );
 };
