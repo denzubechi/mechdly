@@ -4,7 +4,7 @@ import CTAIMG2 from '../../assets/img/reminder.png';
 const CTA = () => {
   return (
     <div>
-      <div className="relative">
+      <div className="relative  bg-black lg:mt-0">
         {/* Fill effect for the first CTA */}
        <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
           <img className="w-full dark:hidden" src={CTAIMG} alt="dashboard image" />

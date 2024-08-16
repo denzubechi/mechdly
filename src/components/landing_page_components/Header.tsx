@@ -42,12 +42,12 @@ export default () => {
     );
 
     return (
-        <div className='relative overflow-hidden'>
+        <div className='relative overflow-hidden bg-black'>
             {/* Background overlay */}
             <div className='absolute inset-0 '></div>
             
             {/* Main content */}
-            <div className='relative z-10'>
+            <div className='relative z-10 pb-8 lg:pb-8'>
                 <header>
                     <div className={`md:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
                         <Brand />
@@ -74,8 +74,8 @@ export default () => {
                     </nav>
                 </header>
                 
-                <section className="relative">
-                <div className="absolute h-[20rem] w-[20rem] bg-[#FFD282] rounded-full filter blur-[100px] md:blur-[120px] top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 md:translate-x-0"></div>
+                <section className="relative mb-8 lg:mb-2">
+                <div className="absolute h-[12rem] w-[20rem] bg-[#FFD282] rounded-full filter blur-[100px] md:blur-[120px] top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 md:translate-x-0"></div>
                     <div className="max-w-screen-xl mx-auto overflow-hidden md:flex relative">
                         <Hero />
                         {/* Fill effect */}
