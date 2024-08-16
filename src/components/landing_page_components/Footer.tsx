@@ -15,19 +15,7 @@ const Footer = () => {
                 href: 'javascript:void()',
                 name: 'Partners & Affiliates'
             },
-            {
-              href: 'javascript:void()',
-              name: ''
-          },
-          {
-            href: 'javascript:void()',
-            name: ''
-        },
-        {
-            href: 'javascript:void()',
-            name: ''
-        },
-          
+         
            
         ],
     },
@@ -46,18 +34,7 @@ const Footer = () => {
                 href: 'javascript:void()',
                 name: 'Pricing'
             },
-            {
-              href: 'javascript:void()',
-              name: ''
-          },
-          {
-            href: 'javascript:void()',
-            name: ''
-        },
-        {
-            href: 'javascript:void()',
-            name: ''
-        },
+           
         ],
     },
     {

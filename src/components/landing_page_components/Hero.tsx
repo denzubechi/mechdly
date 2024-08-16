@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <section className="">
       <div className="grid w-full px-4 lg:px-0 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto lg:pl-4   place-self-center lg:col-span-7">
-          <h1 className="max-w-2xl mb-4   tracking-tight leading-none text-4xl md:text-5xl xl:text-6xl text-white">
+          <h1 className="max-w-2xl mb-4   tracking-tight leading-none text-5xl md:text-5xl xl:text-6xl text-white">
             Schedule,<br />
             Make Payments, & <br />
             Send invoice to <br />

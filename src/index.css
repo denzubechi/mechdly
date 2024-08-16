@@ -11,7 +11,17 @@
   font-weight: normal;
   font-style: normal;
 }
-
+.blur {
+  background-color: #4a2f1d;
+  border-radius: 100px;
+  filter: blur(100px);
+  height: 20rem;
+  position: absolute;
+  top: 12rem;
+  transform: translate(100%, -50%);
+  width: 20rem;
+  z-index: -1;
+}
 
 body {
   margin: 0;

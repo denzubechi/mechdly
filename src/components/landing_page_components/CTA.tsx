@@ -8,7 +8,7 @@ const CTA = () => {
           <img className="w-full dark:hidden" src={CTAIMG} alt="dashboard image" />
           <img className="w-full hidden dark:block" src={CTAIMG} alt="dashboard image" />
           <div className="mt-4 md:mt-0">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
+            <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">
               Let your customers know what time is available in a day!
             </h2>
             <div className="flex">
@@ -24,7 +24,7 @@ const CTA = () => {
 
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <div className="mt-4 md:mt-0 order-2 md:order-1">
-            <h2 className="mb-4 text-4xl tracking-tight font-bold text-white">
+            <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-bold text-white">
             Send reminders,SMS and invoices to customers.
             </h2>
             <div className="flex my-0 sm:my-4">
