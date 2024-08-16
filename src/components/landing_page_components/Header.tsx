@@ -44,7 +44,7 @@ export default () => {
     return (
         <div className='relative overflow-hidden'>
             {/* Background overlay */}
-            <div className='absolute inset-0 bg-black'></div>
+            <div className='absolute inset-0 '></div>
             
             {/* Main content */}
             <div className='relative z-10'>

@@ -7,13 +7,13 @@ import Header from '../../components/landing_page_components/Header'
 import Footer from '../../components/landing_page_components/Footer'
 const Home = () => {
   return (
-    <>
+    <div className='bg-black'>
         <Header/>
         <CTA/>
         <Services/>
         <Testimonials/>
         <Footer/>
-    </>
+    </div>
   )
 }
 
