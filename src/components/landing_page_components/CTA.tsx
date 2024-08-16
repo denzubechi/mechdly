@@ -27,9 +27,9 @@ const CTA = () => {
             <h2 className="mb-4 text-4xl tracking-tight font-bold text-white">
             Send reminders,SMS and invoices to customers.
             </h2>
-            <div className="flex">
+            <div className="flex my-0 sm:my-4">
               <div className="">
-                <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-black rounded-full font-bold bg-primary-700 hover:bg-[#F68537] focus:ring-4 bg-[#F68537]">
+                <a href="#" className="inline-flex sitems-center justify-center px-5 py-3  text-base font-medium text-center text-black rounded-full font-bold bg-primary-700 hover:bg-[#F68537] focus:ring-4 bg-[#F68537]">
                   setup now
                 </a>
               </div>

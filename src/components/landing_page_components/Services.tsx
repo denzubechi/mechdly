@@ -21,11 +21,11 @@ const Services = () => {
           SERVICES WE OFFER
         </Heading>
         <div
-          className={`grid gap-8 md:grid-cols-2 lg:grid-cols-3 ${
-            services.length === 5 ? "lg:grid-cols-2 xl:grid-cols-3" : ""
+          className={`grid gap-8 ${
+            services.length === 5 ? "lg:grid-cols-2 xl:grid-cols-3" : "md:grid-cols-2 lg:grid-cols-3"
           }`}
         >
-          {services.map((service) => (
+          {services.map((service, index) => (
             <Box
               key={service.title}
               p={6}
@@ -36,6 +36,7 @@ const Services = () => {
               shadow="md"
               textAlign="left"
               position="relative"
+              className={services.length === 5 && index >= 3 ? " lg:mx-auto" : ""}
             >
               <Image
                 src={service.image}
