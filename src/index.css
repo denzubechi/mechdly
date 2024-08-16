@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'MyCustomFont';
-  src: url('./assets/fonts/Satoshi-Medium.woff') format('woff2'),
-  url('./assets/fonts/Satoshi-Medium.ttf') format('truetype');
-  ;
-
-  font-weight: normal;
-  font-style: normal;
+  font-family: "San Serif";
+  src: url('./assets/fonts/Satoshi-Medium.ttf') format('truetype'); 
+}
+.blur-header {
+  background-color: #4a2f1d;
+  border-radius: 100px;
+  filter: blur(100px);
+  height: 30rem;
+  position: absolute;
+  top: 1;
+  transform: translate(-90%, 10%);
+  width: 30rem;
+  z-index: -1;
 }
 .blur {
   background-color: #4a2f1d;
@@ -22,12 +28,13 @@
   width: 20rem;
   z-index: -1;
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 body {
   margin: 0;
-  font-family: 'MyCustomFont', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: San Serif;     
 }
+
 
 

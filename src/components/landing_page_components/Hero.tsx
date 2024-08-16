@@ -1,13 +1,12 @@
 import React from 'react';
 import HeroImg from '../../assets/img/hero.png';
-import HeroImgFill from '../../assets/img/3D Element 2.png';
 
 const Hero: React.FC = () => {
   return (
-    <section className="">
+    <section className="relative overflow-hidden">
       <div className="grid w-full px-4 lg:px-0 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto lg:pl-4   place-self-center lg:col-span-7">
-          <h1 className="max-w-2xl mb-4   tracking-tight leading-none text-5xl md:text-5xl xl:text-6xl text-white">
+        <div className="mr-auto lg:pl-4 place-self-center lg:col-span-7">
+          <h1 className="max-w-2xl mb-4 tracking-tight leading-none text-5xl md:text-5xl xl:text-6xl text-white">
             Schedule,<br />
             Make Payments, & <br />
             Send invoice to <br />
@@ -22,10 +21,10 @@ const Hero: React.FC = () => {
         </div>
         <div className="relative hidden lg:flex lg:col-span-5 items-end">
           <img src={HeroImg} alt="mockup" className="w-full h-auto" />
-          {/* <img src={HeroImgFill} alt="3D Element" className="absolute right-0 bottom-0 h-full w-auto lg:w-full xl:w-full" />
-      */}  </div> 
+          <span className="blur-header"></span>
+        </div>
       </div>
-      {/* <img src={HeroImgFill} alt="3D Element" className="absolute right-0 bottom-0 h-full w-auto lg:w-full xl:w-full lg:hidden" /> */}
+    
     </section>
   );
 }

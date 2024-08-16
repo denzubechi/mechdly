@@ -24,7 +24,7 @@ export default () => {
             </a>
             <div className="md:hidden">
                 <button
-                    className="menu-btn text-gray-500 hover:text-gray-800"
+                    className="menu-btn text-gray-500 hover:text-gray-800 z-50 relative"
                     onClick={() => setState(!state)}
                 >
                     {state ? (
@@ -42,9 +42,12 @@ export default () => {
     );
 
     return (
-        <div className='relative'>
+        <div className='relative overflow-hidden'>
+            {/* Background overlay */}
             <div className='absolute inset-0 bg-black'></div>
-            <div className='relative'>
+            
+            {/* Main content */}
+            <div className='relative z-10'>
                 <header>
                     <div className={`md:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
                         <Brand />
@@ -54,17 +57,7 @@ export default () => {
                             <Brand />
                             <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'} `}>
                                 <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                                    {/* {
-                                        navigation.map((item, idx) => {
-                                            return (
-                                                <li key={idx} className="text-gray-700 hover:text-gray-900">
-                                                    <a href={item.path} className="block">
-                                                        {item.title}
-                                                    </a>
-                                                </li>
-                                            )
-                                        })
-                                    } */}
+                                    {/* Add navigation items here */}
                                 </ul>
                                 <div className="items-center justify-end mt-6 space-y-6 md:flex md:mt-0">
                                     <div className="flex gap-2">
@@ -80,12 +73,16 @@ export default () => {
                         </div>
                     </nav>
                 </header>
+                
                 <section>
-                    <div className="max-w-screen-xl mx-auto text-gray-600 overflow-hidden md:flex">
+                    <div className="max-w-screen-xl mx-auto overflow-hidden md:flex">
                         <Hero />
                     </div>
                 </section>
             </div>
+
+            {/* Fill effect at the extreme right end */}
+            <div className="absolute right-[-100px] top-[30px] h-80  lg:h-96 lg:w-46 bg-[#F68537] rounded-full blur-[100px] z-0"></div>
         </div>
     );
 };

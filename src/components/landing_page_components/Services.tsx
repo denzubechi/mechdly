@@ -15,14 +15,22 @@ const Services = () => {
   ];
 
   return (
-    <section className="bg-[#030100] py-8">
-      <div className="max-w-screen-xl px-4 mx-auto text-center">
+    <section className="bg-[#030100] py-8 relative">
+      <div className="max-w-screen-xl px-4 mx-auto text-center relative">
+        
+        {/* Light fill effect at the center of the page */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+          <div className="bg-[#4a2f1d] rounded-full filter blur-[100px] h-[20rem] w-[20rem] md:h-[30rem] md:w-[30rem]"></div>
+        </div>
+
+        <span className="blur-header"></span>
+
         <Heading size="lg" mb={6} color="white">
           SERVICES WE OFFER
         </Heading>
 
         {/* First Grid with 3 items */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-20">
           {services.slice(0, 3).map((service) => (
             <Box
               key={service.title}
@@ -32,15 +40,21 @@ const Services = () => {
               borderRadius="3xl"
               shadow="md"
               textAlign="left"
-              style={{background:"linear-gradient(to bottom right, #545454, #111)", width:"100%", maxWidth:"18rem", height:'15rem'}}
+              style={{
+                background: "linear-gradient(to bottom right, #545454, #111)",
+                width: "100%",
+                maxWidth: "20rem",
+                height: 'auto',
+              }}
               position="relative"
               mx="auto"
+              className="transition-transform transform hover:scale-105 hover:shadow-lg"
             >
               <Image
                 src={service.image}
                 alt={`${service.title} image`}
                 mx="auto"
-                boxSize="50px"
+                boxSize="60px"
                 mb={4}
               />
               <Heading size="md" mb={4} color="white">
@@ -54,7 +68,7 @@ const Services = () => {
         </div>
 
         {/* Second Grid with 2 items, centered on larger screens */}
-        <div className="grid gap-8 mt-8 md:grid-cols-2 lg:w-1/2 lg:mx-auto">
+        <div className="grid gap-4 mt-8 md:grid-cols-2 lg:w-1/2 lg:mx-auto relative z-20">
           {services.slice(3).map((service) => (
             <Box
               key={service.title}
@@ -64,15 +78,21 @@ const Services = () => {
               borderRadius="3xl"
               shadow="md"
               textAlign="left"
-              style={{background:"linear-gradient(to bottom right, #545454, #111)", width:"100%", maxWidth:"18rem", height:'15rem'}}
+              style={{
+                background: "linear-gradient(to bottom right, #545454, #111)",
+                width: "100%",
+                maxWidth: "20rem",
+                height: 'auto',
+              }}
               position="relative"
               mx="auto"
+              className="transition-transform transform hover:scale-105 hover:shadow-lg"
             >
               <Image
                 src={service.image}
                 alt={`${service.title} image`}
                 mx="auto"
-                boxSize="50px"
+                boxSize="60px"
                 mb={4}
               />
               <Heading size="md" mb={4} color="white">
@@ -85,7 +105,6 @@ const Services = () => {
           ))}
         </div>
 
-        <span className="blur"></span>
       </div>
     </section>
   );
